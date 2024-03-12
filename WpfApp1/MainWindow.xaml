@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="208" Margin="69,150,0,0" VerticalAlignment="Top" Width="357" Source="/carrefour.jpeg" Stretch="UniformToFill" StretchDirection="UpOnly"/>
-        <Label Content="Sistema Carrefour" HorizontalAlignment="Left" Margin="579,104,0,0" VerticalAlignment="Top"/>
-        <Label Content="Usuário:" HorizontalAlignment="Left" Margin="520,182,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.894,0.469"/>
-        <Label Content="Senha:" HorizontalAlignment="Left" Margin="528,241,0,0" VerticalAlignment="Top"/>
-        <Rectangle HorizontalAlignment="Left" Height="495" Margin="516,-41,0,0" Stroke="Black" VerticalAlignment="Top" Width="4" RenderTransformOrigin="0.5,0.5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="208" Margin="72,117,0,0" VerticalAlignment="Top" Width="357" Source="/carrefour.jpeg" Stretch="UniformToFill" StretchDirection="UpOnly"/>
+        <Rectangle Height="434" Margin="486,0,0,0" Stroke="Black" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Fill="#FF0079FF" OpacityMask="#99000000">
             <Rectangle.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -21,6 +21,11 @@
                 </TransformGroup>
             </Rectangle.RenderTransform>
         </Rectangle>
+        <Label Content="Sistema Carrefour" HorizontalAlignment="Left" Margin="579,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="Usuário:" HorizontalAlignment="Left" Margin="532,186,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.894,0.469"/>
+        <Label Content="Senha:" HorizontalAlignment="Left" Margin="532,237,0,0" VerticalAlignment="Top"/>
+
+
         <TextBox x:Name="usuario_tx" HorizontalAlignment="Left" Margin="607,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" AutomationProperties.Name="usuario" TextChanged="TextBox_TextChanged"/>
         <TextBox HorizontalAlignment="Left" Margin="607,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Entrar" HorizontalAlignment="Left" Margin="607,297,0,0" VerticalAlignment="Top" Width="40" Click="Button_Click"/>
